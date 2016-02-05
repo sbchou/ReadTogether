@@ -19,25 +19,12 @@
   font-size: 1.25em;
   text-align: center;
 }
-
-.questions .yess{
-  background-color: rgba(255,255,0,0.5); 
-  font-family:'Source Sans Pro';
-  font-size: 1em;
-  text-align: center; 
-  line-height: 1;
-  margin: 1.5px;
-  outline: none;
-  padding: 10px 30px;
-
-}
-
-.questions .yes { 
-  text-decoration: underline;
+ 
+.questions .yes {   
   border-radius: 0.2em;
   border: rgba(0, 0, 0, 0) 0.1px solid;
   font-family: 'Source Sans Pro';
-  background-color: rgba(255,255,0,0.5); 
+  background-color: rgba(255,210,0,0.5); 
   color: black;  
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -49,9 +36,29 @@
 }
  
 .yes:hover {
-   background: yellow;
-  color: #fff; 
+  background-color: rgba(255,200,0,1.0); 
 }
+
+
+.questions .no {   
+  border-radius: 0.2em;
+  border: rgba(0, 0, 0, 0) 0.1px solid;
+  font-family: 'Source Sans Pro';
+  background-color: rgba(255,210,0,0.5); 
+  color: black;  
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 15px;
+  outline: none;
+  padding: 5px 10px;
+  transition: all 200ms ease-in;
+}
+ 
+.no:hover {
+  background-color: rgba(255,200,0,1.0); 
+}
+
 
 /* nav */
 #nav ul {

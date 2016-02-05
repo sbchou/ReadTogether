@@ -76,9 +76,8 @@
     {{#if allDone}}
       <center>
 
-      <h2> That's it for today's delivery! </h2>
-      <h2> Remember to leave feedback to keep the stories coming :) </h2>
-       
+      <h2> That's it for today's delivery! <br>
+       See you tomorrow <i class="ion-happy-outline"></i></h2>  
       </center>
    {{/if}} <!-- end "allDone" -->
 
@@ -135,12 +134,22 @@
 
  
         <div class="questions">  
-        Unlock your next story &ndash; what was this article about?
-        <br>
-        <!-- GUN CONTROL POLITICAL PROCCESSES -->
-        <button class="yes">GUN CONTROL</button>  
+          <br>
+          {{#if fiction}}
+          Did you enjoy this short story?
+          <br>
+
+          <button class="yes"><i class="ion-happy-outline" style="font-size: 1.5em"></i></button>  
+           
+          <button class="no"><i class="ion-sad-outline" style="font-size: 1.5em"></i></button> 
          
-        <button class="yes">POLITICAL PROCCESSES</button>  
+          {{else}} 
+          Unlock your next story &ndash; what was this article about?
+          <br> 
+          <button class="yes">GUN CONTROL</button>  
+           
+          <button class="yes">POLITICAL PROCCESSES</button> 
+        {{/if}}
    
       </div>  
 
@@ -151,6 +160,7 @@
 
 </template>
  
+
 
 <template name="result"> 
   <ul class="article {{selected}}"> 

@@ -50,6 +50,7 @@ if (Meteor.isClient) {
     return date.toLocaleString(); 
   });
 
+
   Template.leaderboard.helpers({
 
     articles: function () {
@@ -253,6 +254,9 @@ if (Meteor.isClient) {
       });
 
       $("#leaderboard").load(location.href + " #leaderboard");
+      $('html,body').scrollTop(0);
+
+      //$("html, body").animate({ scrollTop: 0 });
     },
  
 
