@@ -13,11 +13,10 @@
 
 }
 
-.questions{
-  background-color: rgba(255,255,0,0.5); 
-
-  font-family:'Baskerville';
-  font-size: 1.5em;
+.questions{ 
+  padding: 15px;
+  font-family:"Old Standard TT", "Baskerville";
+  font-size: 1.25em;
   text-align: center;
 }
 
@@ -33,14 +32,15 @@
 
 }
 
-
 .questions .yes { 
+  text-decoration: underline;
   border-radius: 0.2em;
-  border: rgba(0, 0, 0, 0.1) 0.1px solid;
+  border: rgba(0, 0, 0, 0) 0.1px solid;
   font-family: 'Source Sans Pro';
-  background: green;
+  background-color: rgba(255,255,0,0.5); 
   color: black;  
-  font-size: 2.5rem;
+  font-size: 1em;
+  letter-spacing: 0.1em;
   line-height: 1;
   margin: 15px;
   outline: none;
@@ -49,7 +49,7 @@
 }
  
 .yes:hover {
-   background: green;
+   background: yellow;
   color: #fff; 
 }
 
