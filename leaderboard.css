@@ -21,6 +21,7 @@
 }
  
 .questions .yes {   
+  text-transform: uppercase;
   border-radius: 0.2em;
   border: rgba(0, 0, 0, 0) 0.1px solid;
   font-family: 'Source Sans Pro';
@@ -166,7 +167,6 @@ body {
   /*background-color: gainsboro;*/
   border: 1px solid gainsboro;
   /**border-bottom: 1px solid #f1f1f1;*/
-  cursor: pointer;
   padding: .5em 0;
   position: relative;
   overflow: hidden;

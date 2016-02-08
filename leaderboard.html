@@ -128,7 +128,7 @@
     <span class="name">{{{title}}}</span>
     <!--<button class="heart">&hearts;</button> --> 
 
-    <span class="date">3 min</span>  
+    <span class="date">{{reading_time}} min</span>  
     <span class="description">{{body}} </span>   
 
 
@@ -136,20 +136,24 @@
         <div class="questions">  
           <br>
           {{#if fiction}}
-          Did you enjoy this short story?
-          <br>
+            Did you enjoy this short story?
+            <br>
 
-          <button class="yes"><i class="ion-happy-outline" style="font-size: 1.5em"></i></button>  
+            <button class="yes"><i class="ion-happy-outline" style="font-size: 1.5em"></i></button>  
+             
+            <button class="no"><i class="ion-sad-outline" style="font-size: 1.5em"></i></button> 
            
-          <button class="no"><i class="ion-sad-outline" style="font-size: 1.5em"></i></button> 
-         
           {{else}} 
-          Unlock your next story &ndash; what was this article about?
-          <br> 
-          <button class="yes">GUN CONTROL</button>  
-           
-          <button class="yes">POLITICAL PROCCESSES</button> 
-        {{/if}}
+            Unlock your next story &ndash; what was this article about?
+            <br> 
+            <!--{{#each topics}}-->
+              <button class="yes">{{topics.[0]}}</button> 
+            <!--{{/each}}-->
+
+            <button class="yes">SOMETHING ELSE</button> 
+            <!-- placeholder control option -->
+          {{/if}}
+
    
       </div>  
 
